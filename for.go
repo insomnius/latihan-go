@@ -15,7 +15,7 @@ func main() {
 	}
 
 	for {
-		fmt.Println("loop")
+		fmt.Println("perulangan")
 		break
 	}
 
@@ -24,7 +24,7 @@ func main() {
 		if k > 4 {
 			break
 		}
-		fmt.Println("loop ", k)
+		fmt.Println("perulangan ", k)
 		k++
 	}
 
