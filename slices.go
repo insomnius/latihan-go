@@ -23,13 +23,13 @@ func main() {
 	fmt.Println("cpy:", c)
 
 	l := s[2:5]
-	fmt.Println("sl1:", l)
+	fmt.Println("sl1 s[2:5]:", l)
 
 	l = s[:5]
-	fmt.Println("sl2:", l)
+	fmt.Println("sl2 s[:5]:", l)
 
 	l = s[2:]
-	fmt.Println("sl3:", l)
+	fmt.Println("sl3 s[2:]:", l)
 
 	t := []string{"g", "h", "i"}
 	fmt.Println("dcl:", t)
