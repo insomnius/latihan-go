@@ -6,9 +6,13 @@ func main() {
 
 	nums := []int{2, 3, 4}
 	sum := 0
-	for _, num := range nums {
-		sum += num
+
+	// Range = Foreach di PHP
+	for key, value := range nums {
+		sum += value
+		fmt.Println("Array ke:", key, "Value:", value)
 	}
-	fmt.Println("sum:", sum)
+
+	fmt.Println("jumlah value:", sum)
 
 }

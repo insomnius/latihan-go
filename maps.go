@@ -18,8 +18,16 @@ func main() {
 	delete(m, "k2")
 	fmt.Println("map:", m)
 
-	_, prs := m["k2"]
+	// Pra adalah variable untuk key, dan prs adalah variable untuk valuenya
+	pra, prs := m["k2"]
 	fmt.Println("prs:", prs)
+	fmt.Println("pra:", pra)
+
+	// Kita bisa mengganti variable pra dengan underscore jika tidak ingin memakainya
+	// Alasanya karena golang tidak bisa membiarkan satu variabel pun tidak terpakai,
+	// sehingga harus ada sesuatu untuk mengganti variabel tersebut
+	_, prs2 := m["k2"]
+	fmt.Println("prs2:", prs2)
 
 	n := map[string]int{"foo": 1, "bar": 2}
 	fmt.Println("map:", n)
