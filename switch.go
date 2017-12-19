@@ -60,6 +60,27 @@ func main() {
 		fmt.Println("Sekarang adalah bulan Desember")
 	}
 
+	someInteger := 6
+	switch {
+	case someInteger >= 4:
+		fmt.Println("variable someInteger lebih dari 4")
+		fallthrough
+	case someInteger >= 5:
+		fmt.Println("variable someInteger lebih dari 5")
+		fallthrough
+	case someInteger >= 6:
+		fmt.Println("variable someInteger lebih dari 6")
+		fallthrough
+	case someInteger >= 7:
+		fmt.Println("variable someInteger lebih dari 7")
+		fallthrough
+	case someInteger >= 8:
+		fmt.Println("variable someInteger lebih dari 8")
+		fallthrough
+	case someInteger >= 9:
+		fmt.Println("variable someInteger lebih dari 9")
+	}
+
 	whatAmI := func(i interface{}) {
 		switch t := i.(type) {
 		case bool:
